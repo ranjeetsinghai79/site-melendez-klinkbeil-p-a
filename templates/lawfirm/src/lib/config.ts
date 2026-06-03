@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "noir",
-  niche: "lawfirm",
-  name: "Caldwell & Associates",
-  tagline: "Fighting For You. Every Case. Every Time.",
-  phone: "(555) 567-8901",
-  phoneHref: "tel:+15555678901",
-  email: "hello@caldwelllaw.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Sacramento", "San Jose", "Oakland"],
-  license: "California State Bar #456789",
-  since: "2003",
-  google_rating: "4.9",
-  review_count: "156",
-  emergency: true,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Melendez Law Office",
+    tagline: "Your trusted legal partner in Florida.",
+    phone: "(407) 932-1650",
+    phoneHref: "tel:+14079321650",
+    email: "info@melendezlawoffice.com",
+    address: "123 Main St",
+    city: "Kissimmee",
+    serviceAreas: ["Kissimmee", "Orlando", "Central Florida", "Florida", "Puerto Rico"],
+    license: "Florida Bar Member",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "10",
+    emergency: true,
+    theme: "slate",
+    niche: "lawfirm",
+  },
 
   services: [
-  { icon: "car", title: "Personal Injury", desc: "Car accidents, slip & fall, workplace injuries. No fee unless we win. Maximum compensation for your suffering.", urgent: true },
-  { icon: "users", title: "Family Law", desc: "Divorce, child custody, spousal support, and adoption. Protecting your family's future with compassion and strength.", urgent: false },
-  { icon: "shield", title: "Criminal Defense", desc: "DUI, drug charges, assault, theft. We defend your rights aggressively from arrest through trial.", urgent: true },
-  { icon: "briefcase", title: "Business Law", desc: "Contracts, partnerships, LLC formation, disputes. Legal protection for every stage of your business.", urgent: false },
-  { icon: "file-text", title: "Estate Planning", desc: "Wills, trusts, power of attorney, and probate. Secure your legacy and protect your loved ones.", urgent: false },
-  { icon: "globe", title: "Immigration Law", desc: "Visas, green cards, citizenship, deportation defense. Navigating complex immigration with decades of experience.", urgent: false },
-],
+    { icon: "briefcase", title: "Creditor Rights", desc: "Protecting your financial interests with expert legal representation.", urgent: false },
+    { icon: "hammer", title: "Business Law & Litigation", desc: "Comprehensive legal support for your business operations and disputes.", urgent: false },
+    { icon: "home", title: "Real Estate Law", desc: "Navigating complex real estate transactions and landlord/tenant issues.", urgent: false },
+    { icon: "shield-check", title: "Personal Injury Claims", desc: "Helping you receive rightful compensation after an accident.", urgent: true },
+    { icon: "gavel", title: "Criminal Defense", desc: "Aggressive defense for DUI, theft, drug crimes, and other charges.", urgent: true },
+    { icon: "award", title: "Expungements & Sealings", desc: "Clearing your record for a fresh start and brighter future.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "David R.", location: "Tracy, CA", stars: 5, text: "After my car accident, I was overwhelmed. Caldwell & Associates handled everything — insurance, medical bills, settlement. Got 3x what the insurance offered." },
-  { name: "Maria G.", location: "Stockton, CA", stars: 5, text: "Went through a difficult divorce with children involved. They fought hard for my custody rights while being sensitive to the emotional toll. Couldn't have done it without them." },
-  { name: "James T.", location: "Modesto, CA", stars: 5, text: "Faced criminal charges that could have ruined my career. They had the charges dismissed. Professional, responsive, and genuinely cared about my outcome." },
-],
+    { name: "Marixa Salgado", location: "Orlando, FL", stars: 5, text: "Carlos Melendez responded immediately to a call about an accident. Thanks to his guidance, the outcome was positive, and our family could not be happier. I recommend him to anyone who has an accident and doesn’t know what to do next; he is caring, knowledgeable, and non-judgmental. You will be happy you called him!" },
+    { name: "Chris Ramos", location: "Kissimmee, FL", stars: 5, text: "I highly recommend Melendez Law Offices. They assisted me with a traffic citation. Their professional team navigated the legal process efficiently, providing clear communication and expert advice. Grateful for their expertise and positive outcome. They truly made a difference." },
+    { name: "Megan Strable", location: "Central Florida", stars: 5, text: "Carlos did an amazing job with my case. He acted with great precision and determination and treated me and my situation with the utmost importance and consideration. I appreciate everything he did for my case and would definitely recommend him to anyone in need of a great lawyer!" }
+  ],
 
   trustBadges: [
-  "20+ Years Experience", "No Fee Unless We Win", "Free Consultations",
-  "AV Preeminent Rated", "Super Lawyers 2024", "1,000+ Cases Won"
-],
+    "Florida Bar Member", "24/7 Phone Services", "Personalized Representation", "Client-Focused Approach", "Serving Florida & Puerto Rico"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 780,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 23,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 10, label: "Years Experience", suffix: "+", decimals: 0 },
+    { value: 100, label: "Cases Won", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Intake 24/7",
-    "desc": "AI answers calls and texts around the clock — qualifies leads, schedules consultations, and captures case details before your team follows up."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "phone", title: "24/7 Phone Services", desc: "We are always available to take your call and provide immediate assistance." },
+    { icon: "heart", title: "Dedicated to Clients", desc: "We prioritize your well-being and fight tirelessly for your best interests." },
+    { icon: "award", title: "Exceptional Representation", desc: "Receive top-tier legal services for all your complex legal matters." },
+    { icon: "thumbs-up", title: "Personalized Attention", desc: "More personal than big firms, we build relationships based on trust." },
+    { icon: "shield-check", title: "Protecting Your Rights", desc: "We value and support your opinions, rights, interests, and freedoms." },
+    { icon: "map-pin", title: "Florida & Puerto Rico", desc: "Expert legal services available across Florida and in Puerto Rico." }
+  ],
 
-  formServiceOptions: [
-  "Personal Injury",
-  "Family Law",
-  "Criminal Defense",
-  "Business Law",
-  "Estate Planning",
-  "Immigration Law"
-],
+  formServiceOptions: ["Creditor Rights", "Banking Litigation – Legal Action Recovery", "Business Law and Commercial Litigation", "Real Estate and Commercial Landlord / Tenant Law", "Mortgage Foreclosure", "Personal Injury", "Criminal Defense"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
